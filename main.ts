@@ -1,10 +1,12 @@
-function calculateTotal(items: Array<{ name: string; price: number }>): number {
+function calculateTotal(items: { name: string; price: number }[]): number {
   let total = 0;
-  for (let i = 0; i < items.length; i++) {
-    total += items[i].price;
+  for (const item of items) {
+    total += item.price;
   }
-  console.log("Total:", total);
-  return total;
+  const discount = total > 5 ? 0.1 : 0;
+  const finalTotal = total - total * discount;
+  console.log(`Total after discount: $${finalTotal}`);
+  return finalTotal;
 }
 
 const items = [
