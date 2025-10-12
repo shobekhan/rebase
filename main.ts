@@ -3,7 +3,7 @@ function calculateTotal(items: { name: string; price: number }[]): number {
   for (const item of items) {
     total += item.price;
   }
-  const discount = total > 5 ? 0.1 : 0;
+  const discount = total > 5 ? 0.2 : 0;
   const finalTotal = total - total * discount;
   console.log(`Total after discount: $${finalTotal}`);
   return finalTotal;
