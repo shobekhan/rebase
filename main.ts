@@ -15,6 +15,4 @@ const items = [
   { name: "Cherry", price: 133 },
 ];
 
-
-
 calculateTotal(items);
