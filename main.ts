@@ -10,9 +10,9 @@ function calculateTotal(items: { name: string; price: number }[]): number {
 }
 
 const items = [
-  { name: "Apple", price: 31 },
-  { name: "Banana", price: 32 },
-  { name: "Cherry", price: 3311 },
+  { name: "Apple", price: 131 },
+  { name: "Banana", price: 132 },
+  { name: "Cherry", price: 133 },
 ];
 
 
