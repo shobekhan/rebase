@@ -1,3 +1,2 @@
-Calculator v2 - develop branch
-Add function: add_numbers(a, b)
-Add function: subtract(a, b)
+Calculator v1
+Add function: add(a, b)
