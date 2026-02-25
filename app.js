@@ -1,8 +1,8 @@
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
-      <p>Welcome to the app</p>
+      <h1>Dashboard</h1>
+      <p>Select an option below</p>
     </div>
   );
 }
