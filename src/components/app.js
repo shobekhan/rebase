@@ -1,7 +1,7 @@
 const config = require("./config");
 
 function start() {
-    console.log("App started");
+    console.log("Main application started");
     console.log("Environment:", config.env);
 }
 

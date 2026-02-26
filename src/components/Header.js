@@ -1,5 +1,5 @@
 function Header() {
-    return "Welcome";
+    return "Welcome Guest";
 }
 
 module.exports = Header;

@@ -1,3 +1,3 @@
 # My App
 
-Initial version.
+Main branch updated documentation.
