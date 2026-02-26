@@ -1,7 +1,7 @@
 const Button = require("./components/Button");
 
 function start() {
-    console.log("App started");
+    console.log("Main app initialized");
     console.log(Button());
 }
 
