@@ -1,5 +1,6 @@
 const theme = {
-    color: "blue"
+    color: "light",
+    font: "Arial"
 };
 
 module.exports = theme;
