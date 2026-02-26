@@ -1,4 +1,0 @@
-APP_NAME=MyApp
-PORT=3000
-MODE=development
-LOG_LEVEL=info
