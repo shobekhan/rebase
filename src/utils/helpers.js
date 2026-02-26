@@ -1,5 +1,5 @@
 function formatMessage(message) {
-    return `[INFO]: ${message}`;
+    return `[MAIN]: ${message}`;
 }
 
 module.exports = { formatMessage };

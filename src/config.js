@@ -1,4 +1,5 @@
 module.exports = {
     mode: "production",
-    debug: false
+    debug: false,
+    version: "1.1"
 };

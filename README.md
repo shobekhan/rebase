@@ -1,3 +1,3 @@
 # Rebase Exercise
 
-This is a simple Node.js application.
+Main branch includes safe mode.
