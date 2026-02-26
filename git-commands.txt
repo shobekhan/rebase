@@ -1,0 +1,3 @@
+git log --oneline --graph
+
+git commit -am "Feature: personalize title"
