@@ -45,10 +45,29 @@ git diff
 
 ------------------------------------------------------------------------
 
+### git diff
+
+Compare your version vs main version
+
+``` bash
+git diff --ours src/api.js
+git diff --theirs src/api.js
+```
+
+------------------------------------------------------------------------
+
 ### Show only conflicted files
 
 ``` bash
 git diff --name-only --diff-filter=U
+```
+
+------------------------------------------------------------------------
+
+### Show only one file conflict
+
+``` bash
+git diff src/api.js
 ```
 
 ------------------------------------------------------------------------
