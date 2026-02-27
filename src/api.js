@@ -1,4 +1,4 @@
-export function fetchUser(id) {
-  return fetch(`/api/users/${id}`)
-    .then(res => res.json());
+export async function fetchUser(id) {
+  const response = await fetch(`/api/users/${id}`);
+  return response.json();
 }
