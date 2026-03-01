@@ -1,2 +1,0 @@
-debug=false
-timeout=60
