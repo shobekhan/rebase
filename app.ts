@@ -1,3 +1,3 @@
 function greet(name: string) {
-    return \`Hello, \${name}! Welcome to main branch.\`;
+    return \`Hello, \${name}! Updated on main branch.\`;
 }
