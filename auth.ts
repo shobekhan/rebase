@@ -1,5 +1,6 @@
 import { User } from "./types";
+import { compareHash } from "./utils";
 
-export function login(user: User, password: string): boolean {
-  return user.password === password;
+export async function login(user: User, password: string): Promise<boolean> {
+  return compareHash(password, user.hashedPassword);
 }
