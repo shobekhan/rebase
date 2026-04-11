@@ -1,6 +1,5 @@
-// src/app.ts
 export function greet(name: string): string {
-  return `Hello, ${name}`;
+  return `Hello there, ${name}!`; // different change
 }
 
 export function sum(a: number, b: number): number {
