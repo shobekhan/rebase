@@ -3,3 +3,8 @@ export interface Customer {
   fullName: string;
   active: boolean;
 }
+
+export enum Status {
+  ACTIVE = "active",
+  INACTIVE = "inactive"
+}
