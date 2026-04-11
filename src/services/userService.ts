@@ -1,9 +1,9 @@
-import { Customer } from "../models/customer";
+import { User } from "../models/user";
 
-export function getDisplayName(customer: Customer): string {
-  return customer.fullName.toUpperCase();
+export function getDisplayName(user: User): string {
+  return user.name;
 }
 
-export function isUserActive(customer: Customer): boolean {
-  return customer.active;
+export function isUserActive(user: User): boolean {
+  return user.isActive;
 }
