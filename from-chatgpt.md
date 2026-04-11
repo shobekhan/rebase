@@ -296,4 +296,14 @@ git checkout --theirs file
 
 ------------------------------------------------------------------------
 
+## What is what
+
+Imagine you are running the following rebase command "git rebase -i main" you are on a feature branch
+
+``` bash
+Accept current change will be from main branch
+Accept incoming will be from feature branch
+```
+------------------------------------------------------------------------
+
 End of guide.
