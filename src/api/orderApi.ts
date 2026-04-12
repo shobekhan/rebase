@@ -1,9 +1,9 @@
 import { Order } from "../models/order";
 
-export function fetchOrder(id: string): Order {
+export async function fetchOrder(id: string): Promise<Order> {
   return {
     id,
     amount: 100,
-    isComplete: false
+    status: "open" as any
   };
 }
