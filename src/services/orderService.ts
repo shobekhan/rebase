@@ -1,9 +1,9 @@
-import { Order, OrderStatus } from "../models/order";
+import { Order } from "../models/order";
 
 export function getOrderTotal(order: Order): number {
   return order.amount;
 }
 
 export function isCompleted(order: Order): boolean {
-  return order.status === OrderStatus.COMPLETED;
+  return order.isComplete;
 }
