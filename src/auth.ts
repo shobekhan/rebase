@@ -1,5 +1,5 @@
 import { User } from "./user";
 
 export function login(user: User): string {
-    return `User ${user.name} logged in`;
+    return `Welcome ${user.username}`;
 }
