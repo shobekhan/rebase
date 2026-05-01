@@ -1,5 +1,5 @@
 {
   "git.mergeEditor": true,
-  "gitlens.rebaseEditor.enabled": false,
+  "gitlens.rebaseEditor.enabled": true,
   "gitlens.views.rebase.enabled": false
 }
