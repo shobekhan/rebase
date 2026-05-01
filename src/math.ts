@@ -1,3 +1,10 @@
-export function calculateTotal(items: number[]): number {
-    return items.reduce((sum, item) => sum + item, 0);
+export interface LineItem {
+    price: number;
+    quantity: number;
+}
+
+export function calculateTotal(items: LineItem[]): number {
+    return items.reduce((sum, item) => {
+        return sum + item.price * item.quantity;
+    }, 0);
 }
