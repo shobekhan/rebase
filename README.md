@@ -1,0 +1,1 @@
+echo "# TypeScript App" > README.md
