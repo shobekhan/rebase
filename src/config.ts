@@ -1,1 +1,2 @@
-export const API_URL: string = "v1";
+export const API_URL: string = "v3";
+export const TIMEOUT: number = 5000;
