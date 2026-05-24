@@ -10,6 +10,7 @@ async function run(): Promise<void> {
   const name = formatName(user.name);
   const total = calculateTotal([10, 20, 30]);
 
+  logMessage(user.email);
   logMessage(`User: ${name}`);
   logMessage(`Total: ${total}`);
 
