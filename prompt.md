@@ -3,6 +3,7 @@ Create a realistic Git rebase conflict exercise for me in TypeScript. Follow the
 Requirements:
 
 - INITIAL STATE (start from main) creating the files
+- END state (show) what will be the ideal rebase to make the merge work in a proper way
 - Multiple files must have merge conflicts
    - Include at least 4–6 TypeScript files with overlapping changes across two branches.
    - Conflicts should include both content conflicts and structural conflicts.
