@@ -1,4 +1,4 @@
-Create a realistic Git merge conflict exercise for me in TypeScript.
+Create a realistic Git rebase conflict exercise for me in TypeScript.
 
 Requirements:
 
