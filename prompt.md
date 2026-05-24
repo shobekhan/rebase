@@ -1,8 +1,8 @@
-Create a realistic Git rebase conflict exercise for me in TypeScript. Follow the execpt staps as described in requirement
+Create a realistic Git rebase conflict exercise for me in TypeScript. Follow the exact steps as described in requirement
 
 Requirements:
 
-- show all the cli git commands
+- Show all the cli git commands
 - INITIAL STATE (start from main) creating the files
 - Multiple files must have merge conflicts
    - Include at least 4–6 TypeScript files with overlapping changes across two branches.
