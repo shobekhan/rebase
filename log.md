@@ -19,3 +19,7 @@ git log --grep 'foo'
 ### search in logs (shows the changes)
 
 git log --grep 'foo' -p
+
+### search in logs (shows the changes, in the specific files)
+
+git log -p src/index.ts
