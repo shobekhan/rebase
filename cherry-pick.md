@@ -15,3 +15,11 @@ git cherry-pick -n 1234567^..89abcde
 git cherry-pick --abort
 
 git reset --hard HEAD
+
+### By default, git cherry-pick creates a commit automatically after applying the selected commit(s).
+
+git cherry-pick <commit-hash>
+
+### if you want to remove the cherry pick commit
+
+git reset --hard HEAD~1
