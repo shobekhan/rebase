@@ -1,9 +1,10 @@
-import { processNumbers } from "./processors/processor";
-import { generateReport } from "./services/report";
-import { AuthService } from "./services/authService";
+import { fetchUsers } from "./services/api";
+import { processUsers } from "./services/processor";
+import { add } from "./utils/math";
+import { log } from "./utils/logger";
 
-const auth=new AuthService();
+const users = processUsers(fetchUsers());
 
-if(auth.login("admin")){
-    console.log(generateReport([String(processNumbers([3,4]))]));
-}
+log(users.join(", "));
+
+console.log(add(2, 3));
