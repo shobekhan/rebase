@@ -1,10 +1,9 @@
 import { processNumbers } from "./processors/processor";
 import { generateReport } from "./services/report";
-import { authenticate } from "./services/auth";
-import { log } from "./utils/logger";
+import { AuthService } from "./services/authService";
 
-const nums = processNumbers([1,2,3]);
+const auth=new AuthService();
 
-if(authenticate("admin")){
-    log(generateReport([String(nums)]));
+if(auth.login("admin")){
+    console.log(generateReport([String(processNumbers([3,4]))]));
 }

@@ -1,5 +1,7 @@
-import { add } from "../utils/math";
+import { add } from "../lib/math";
 
-export function processNumbers(numbers: number[]) {
-    return numbers.reduce(add);
+export function processNumbers(numbers:number[]){
+
+    return numbers.reduce(add,0);
+
 }
