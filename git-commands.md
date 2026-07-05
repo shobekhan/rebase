@@ -2,6 +2,7 @@
 ```
 git commit -am "Feature: personalize title"
 ```
+
 ### stages new, modified, and deleted files in the entire repository
 ```
 git add --all

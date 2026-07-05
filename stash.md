@@ -10,7 +10,6 @@ git stash push -m "Stash documentation: work in progress"
 git stash push -u -m "Stash documentation: work in progress"
 ```
 
-
 ### List all stashes
 
 ```
