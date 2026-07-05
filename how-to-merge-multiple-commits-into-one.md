@@ -38,3 +38,33 @@ fixup j0k1l2
 git push --force-with-lease
 ```
 
+# Option 2
+
+### If you just want a single commit and don’t care about editing
+
+```
+git reset --soft HEAD~4
+git commit -m "Your combined message"
+```
+
+This will allow you to create a new commit with all the changes from the previous 4 commits.
+
+# If you want to change the commit message
+
+Run command:
+
+```
+git rebase -i HEAD~4
+```
+
+```
+reword a1b2c3
+fixup d4e5f6
+fixup g7h8i9
+fixup j0k1l2
+```
+
+Now Git will:
+
+- merge commits
+- then open editor for final message
