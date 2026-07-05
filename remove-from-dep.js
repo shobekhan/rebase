@@ -4,3 +4,5 @@ function removeFromDep(dep, packageName) {
         delete dep[packageName];
     }
 }
+
+module.exports = removeFromDep;
