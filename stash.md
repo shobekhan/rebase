@@ -46,7 +46,7 @@ git stash clear
 ### Show what's inside a stash
 
 ```
-Show what's inside a stash
+git stash show stash@{0}
 ```
 
 ### Create a branch from a stash
