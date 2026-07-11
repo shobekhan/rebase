@@ -35,3 +35,32 @@ git log --grep 'foo' -p
 ```
 git log -p src/index.ts
 ```
+
+### Search commits by author
+
+git log --author="John"
+
+
+### Search commits containing a specific code change
+
+git log -S "calculateTax"
+
+### Search using a regular expression
+
+git log -G "function.*login"
+
+### Search commits in a date range
+
+git log --since="2026-01-01" --until="2026-07-01"
+
+### Search a specific file's history
+
+git log -- app.js
+
+### Search all branches
+
+git log --all --grep="migration"
+
+### Find who changed a specific line
+
+git blame app.js
