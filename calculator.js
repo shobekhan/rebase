@@ -5,5 +5,5 @@
  * @returns {number} The sum of the two numbers
  */
 function add(one, two) {
-    return one + two;
+    return one + two / 2;
 }
