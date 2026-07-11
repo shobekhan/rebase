@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Git Rebase Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f3f3f3;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Git Rebase Information</h2>
+
+<label>Your branch (HEAD)</label>
+<input id="headBranch" placeholder="feature/payment">
+
+<label>Rebase onto (Incoming branch)</label>
+<input id="incomingBranch" placeholder="develop">
+
+<button onclick="showRebase()">Show</button>
+
+<div class="result" id="result"></div>
+
+<script>
+function showRebase() {
+    const head = document.getElementById("headBranch").value;
+    const incoming = document.getElementById("incomingBranch").value;
+
+    document.getElementById("result").innerHTML = `
+        <h3>Rebase Information</h3>
+
+        <b>HEAD branch:</b><br>
+        ${head || "Not provided"}
+
+        <br><br>
+
+        <b>Incoming branch:</b><br>
+        ${incoming || "Not provided"}
+
+        <br><br>
+
+        <b>Operation:</b><br>
+        ${head} is being rebased onto ${incoming}
+    `;
+}
+</script>
+
+</body>
+</html>
