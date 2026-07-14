@@ -1,8 +1,8 @@
 export class Calculator {
 
-  add(x: number, y: number): number {
-    console.log("Production calculation");
-    return x + y;
+  add(a: number, b: number): number {
+    console.log("Adding numbers");
+    return a + b;
   }
 
 }
