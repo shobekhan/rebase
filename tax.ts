@@ -1,6 +1,6 @@
-export function calculateTax(amount:number):number {
+export function calculateTax(amount: number): number {
 
   console.log("Production tax");
 
-  return amount * 0.12;
+  return amount * 0.15;
 }
