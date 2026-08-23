@@ -14,6 +14,10 @@ const userMessage = userService.createUser({
 
 log(userMessage);
 
-const orderMessage = processor.process("order-1", 125);
+const orderMessage = processor.process("order-1", 250);
 
 log(orderMessage);
+
+console.log(
+    `Discount: ${processor.calculateDiscount(250)}`
+);

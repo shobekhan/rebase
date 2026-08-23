@@ -10,13 +10,19 @@ export interface Order {
 export class OrderService {
     createOrder(order: Order): string {
         if (!isValidOrderAmount(order.amount)) {
-            throw new Error("Invalid order amount");
+            throw new Error("Order amount must be positive");
         }
 
-        return `Order ${order.id} created for ${formatCurrency(order.amount)}`;
+        return `Order ${order.id} created for ${formatCurrency(
+            order.amount
+        )}`;
     }
 
     getOrderTotal(order: Order): number {
         return order.amount;
+    }
+
+    getOrderDescription(order: Order): string {
+        return `Order ${order.id} for customer ${order.customerId}`;
     }
 }

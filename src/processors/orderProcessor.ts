@@ -11,6 +11,10 @@ export class OrderProcessor {
             amount
         });
 
-        return `${message} Total: ${formatCurrency(amount)}`;
+        return `${message} | Total: ${formatCurrency(amount)}`;
+    }
+
+    calculateDiscount(amount: number): number {
+        return amount >= 100 ? amount * 0.1 : 0;
     }
 }

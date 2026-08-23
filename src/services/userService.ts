@@ -11,10 +11,10 @@ export interface User {
 export class UserService {
     createUser(user: User): string {
         if (!isValidEmail(user.email)) {
-            throw new Error("Invalid email");
+            throw new Error("Please provide a valid customer email");
         }
 
-        return `Created user ${formatCustomerName(
+        return `Customer created: ${formatCustomerName(
             user.firstName,
             user.lastName
         )}`;
@@ -22,5 +22,9 @@ export class UserService {
 
     getUserEmail(user: User): string {
         return user.email;
+    }
+
+    getUserDisplayName(user: User): string {
+        return `${user.firstName} ${user.lastName}`;
     }
 }
