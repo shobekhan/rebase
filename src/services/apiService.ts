@@ -1,4 +1,4 @@
-import { logInfo } from "../utils/logger";
+import { logInfo } from "../lib/logger";
 
 export async function fetchOrder(orderId: string): Promise<string> {
   logInfo(`Fetching order ${orderId}`);
