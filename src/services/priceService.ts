@@ -1,4 +1,4 @@
-import { formatCurrency } from "../utils/formatUtils";
+import { formatCurrency } from "../lib/formatUtils";
 
 export function calculateTotal(price: number, quantity: number): string {
   const total = price * quantity;
