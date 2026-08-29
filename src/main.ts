@@ -15,4 +15,4 @@ const order = service.createOrder([
   }
 ]);
 
-console.log("Order:", order);
+console.log("Final order including shipping:", order);
