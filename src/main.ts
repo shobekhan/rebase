@@ -13,7 +13,7 @@ const order: Order = {
 const subtotal = calculateSubtotal(order);
 
 console.log(`Order ${order.id}`);
-console.log(`Subtotal: €${subtotal}`);
+console.log(`Order subtotal: €${subtotal}`);
 
 const payment: Payment = {
     method: "CARD",
