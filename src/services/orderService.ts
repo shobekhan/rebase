@@ -10,5 +10,5 @@ export interface Order {
 export function createOrder(order: Order): string {
   const total = order.price * order.quantity;
 
-  return `Order ${order.id}: ${order.product} - ${formatCurrency(total)}`;
+  return `Order ${order.id}: ${order.product} - Total: ${formatCurrency(total)}`;
 }
