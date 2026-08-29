@@ -1,4 +1,4 @@
-import { Order, calculateSubtotal } from "./order";
+import { Order, calculateSubtotal, calculateDiscount } from "./order";
 import { Payment, processPayment } from "./payment";
 
 const order: Order = {
@@ -11,13 +11,17 @@ const order: Order = {
 };
 
 const subtotal = calculateSubtotal(order);
+const discount = calculateDiscount(order);
+const total = subtotal - discount;
 
 console.log(`Order ${order.id}`);
-console.log(`Order subtotal: €${subtotal}`);
+console.log(`Subtotal: €${subtotal}`);
+console.log(`Discount: €${discount}`);
+console.log(`Total: €${total}`);
 
 const payment: Payment = {
     method: "CARD",
-    amount: subtotal
+    amount: total
 };
 
 console.log(processPayment(payment));
