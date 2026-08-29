@@ -49,3 +49,9 @@ TypeScript only
    - All files should be .ts.
    - Keep code simple but realistic (e.g. utility functions, services, data processors, API helpers).
 - END state (show) what will be the ideal rebase to make the merge work in a proper way
+- Do not use this kind of formatting, just keep it without the cat
+cat > src/utils/formatUtils.ts <<'EOF'
+export function formatCurrency(amount: number): string {
+  return `€${amount.toFixed(2)}`;
+}
+EOF
