@@ -25,7 +25,7 @@ console.log(`Order ${order.id}`);
 console.log(`Subtotal: €${subtotal}`);
 console.log(`Discount: €${discount}`);
 console.log(`Tax: €${tax}`);
-console.log(`Total: €${total}`);
+console.log(`Final total: €${total}`);
 
 const payment: Payment = {
     method: "CARD",
