@@ -6,6 +6,12 @@ async function main(): Promise<void> {
   log("Application started");
 
   const user = await fetchUser();
+
+  if (!user.active) {
+    log("User is inactive");
+    return;
+  }
+
   const processedUser = processUser(user.id, user.name);
 
   console.log("Processed user:", processedUser);

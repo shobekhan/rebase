@@ -1,13 +1,13 @@
-import { displayName } from "../utils/stringUtils";
+import { formatLabel } from "../utils/stringUtils";
 
 export interface ProcessedUser {
   id: number;
-  displayName: string;
+  label: string;
 }
 
 export function processUser(id: number, name: string): ProcessedUser {
   return {
     id,
-    displayName: displayName(name),
+    label: formatLabel(name),
   };
 }
