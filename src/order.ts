@@ -26,3 +26,10 @@ export function calculateDiscount(order: Order): number {
 
     return 0;
 }
+
+export function calculateTax(order: Order): number {
+    const subtotal = calculateSubtotal(order);
+    const discount = calculateDiscount(order);
+
+    return (subtotal - discount) * 0.19;
+}
