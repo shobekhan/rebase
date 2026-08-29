@@ -1,4 +1,4 @@
-import { calculateTotal } from "./priceService";
+import { formatCurrency } from "../lib/formatUtils";
 
 export interface Order {
   id: string;
@@ -8,7 +8,7 @@ export interface Order {
 }
 
 export function createOrder(order: Order): string {
-  const total = calculateTotal(order.price, order.quantity);
+  const total = order.price * order.quantity;
 
-  return `Order ${order.id}: ${order.product} - ${total}`;
+  return `Order ${order.id}: ${order.product} - ${formatCurrency(total)}`;
 }
