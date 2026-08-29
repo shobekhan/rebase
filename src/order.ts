@@ -16,3 +16,13 @@ export function calculateSubtotal(order: Order): number {
         0
     );
 }
+
+export function calculateDiscount(order: Order): number {
+    const subtotal = calculateSubtotal(order);
+
+    if (subtotal >= 800) {
+        return subtotal * 0.05;
+    }
+
+    return 0;
+}
