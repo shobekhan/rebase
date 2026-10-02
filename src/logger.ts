@@ -1,3 +1,5 @@
 export function log(message: string): void {
-  console.log(message)
+  const timestamp = new Date().toISOString()
+
+  console.log(`[${timestamp}] ${message}`)
 }
