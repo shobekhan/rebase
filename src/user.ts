@@ -1,8 +1,8 @@
-export interface User {
-  id: number
+export type User = {
+  id: string
   name: string
 }
 
-export function getUserDisplayName(user: User): string {
-  return `User: ${user.name}`
+export default function showUser(user: User): void {
+  console.log(`User ID: ${user.id}, User Name: ${user.name}`)
 }
