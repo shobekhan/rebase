@@ -28,11 +28,11 @@
 
 <h2>Git Rebase Information</h2>
 
-<label>Your branch (HEAD)</label>
-<input id="headBranch" placeholder="feature/payment">
+<label>Your branch</label>
+<input id="currentCheckedoutBranch" placeholder="feature/payment">
 
-<label>Rebase onto (Incoming branch)</label>
-<input id="incomingBranch" placeholder="develop">
+<label>Rebase onto</label>
+<input id="onTopOf" placeholder="develop">
 
 <button onclick="showRebase()">Show</button>
 
@@ -40,24 +40,24 @@
 
 <script>
 function showRebase() {
-    const head = document.getElementById("headBranch").value;
-    const incoming = document.getElementById("incomingBranch").value;
+    const currentCheckedoutBranch = document.getElementById("currentCheckedoutBranch").value;
+    const onTopOf = document.getElementById("onTopOf").value;
 
     document.getElementById("result").innerHTML = `
         <h3>Rebase Information</h3>
 
-        <b>HEAD branch:</b><br>
-        ${head || "Not provided"}
+        <b>Current branch:</b><br>
+        ${onTopOf || "Not provided"}
 
         <br><br>
 
         <b>Incoming branch:</b><br>
-        ${incoming || "Not provided"}
+        ${currentCheckedoutBranch || "Not provided"}
 
         <br><br>
 
         <b>Operation:</b><br>
-        ${head} is being rebased onto ${incoming}
+        ${currentCheckedoutBranch} is being rebased onto ${onTopOf}
     `;
 }
 </script>
