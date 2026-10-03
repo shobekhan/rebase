@@ -1,8 +1,13 @@
 export type User = {
-  id: string
-  name: string
+    id: string
+    name: string
+    member?: boolean
 }
 
 export default function showUser(user: User): void {
-  console.log(`User ID: ${user.id}, User Name: ${user.name}`)
+    if (user.member) {
+        console.log(`User ID: ${user.id}, User Name: ${user.name} (Member)`)
+    } else {
+        console.log(`User ID: ${user.id}, User Name: ${user.name}`)
+    }
 }
