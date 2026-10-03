@@ -1,4 +1,4 @@
-import { getUserName, User } from './user'
+import { getUserName, User } from './user-service'
 
 const user: User = {
   id: 1,
