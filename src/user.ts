@@ -4,5 +4,5 @@ export interface User {
 }
 
 export function getUserDisplayName(user: User): string {
-  return user.name
+  return `User: ${user.name}`
 }
